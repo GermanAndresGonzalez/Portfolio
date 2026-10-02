@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Germán Andrés González | Desarrollador C# .NET y Python</title>
+  <meta name="description" content="Portfolio profesional de Germán Andrés González. Desarrollador C# y Backend .NET, programador Python y microcontroladores, con más de 20 años de experiencia como traductor técnico.">
+
+  <!-- Enlaces alternativos cruzados para soporte bilingüe (SEO y accesibilidad) -->
+  <link rel="alternate" hreflang="es" href="index.html">
+  <link rel="alternate" hreflang="en" href="en/index.html">
+
+  <!-- Fuentes Google: Space Grotesk (700) e Inter (400, 600) en una sola llamada -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos compartida con rutas relativas -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. MENÚ DE NAVEGACIÓN FIJO
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#inicio" class="brand-logo" aria-label="Ir al inicio">Germán Andrés González</a>
+
+      <!-- Menú hamburguesa solo con CSS (checkbox + label) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir o cerrar menú de navegación">
+      <label for="menu-toggle" class="menu-button" aria-label="Alternar navegación">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+          <li><a href="#conocimientos" class="nav-link">Conocimientos</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#redes" class="nav-link">Redes</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+
+        <!-- Selector de idioma: ES activo, EN como enlace al mismo ancla -->
+        <div class="lang-selector" aria-label="Selector de idioma">
+          <span class="lang-item active" aria-current="true">
+            <svg class="flag-icon" viewBox="0 0 768 512" aria-hidden="true" focusable="false">
+              <rect width="768" height="512" fill="#74ACDF"/>
+              <rect y="170.66" width="768" height="170.66" fill="#FFFFFF"/>
+              <circle cx="384" cy="256" r="42" fill="#F6B40E"/>
+            </svg>
+            <span>ES</span>
+          </span>
+          <span class="lang-separator" aria-hidden="true">|</span>
+          <a href="en/index.html#inicio" class="lang-item lang-link" lang="en" hreflang="en" aria-label="Cambiar a inglés">
+            <svg class="flag-icon" viewBox="0 0 768 512" aria-hidden="true" focusable="false">
+              <rect width="768" height="512" fill="#B22234"/>
+              <path d="M0,39.38h768v39.38H0zm0,78.77h768v39.38H0zm0,78.77h768v39.38H0zm0,78.77h768v39.38H0zm0,78.77h768v39.38H0zm0,78.77h768v39.38H0z" fill="#FFFFFF"/>
+              <rect width="307.2" height="275.69" fill="#3C3B6E"/>
+              <circle cx="153.6" cy="137.8" r="45" fill="#FFFFFF"/>
+            </svg>
+            <span>EN</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         2. PRESENTACIÓN INICIAL CON FOTO (#inicio) - Fondo Oscuro
+         ====================================================================== -->
+    <section id="inicio" class="hero-section theme-dark">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="hero-name">Germán Andrés González</h1>
+          <p class="hero-title">Desarrollador C# y Backend .NET · Programador Python y Microcontroladores</p>
+          <p class="hero-phrase">
+            Soy traductor técnico con más de 20 años de experiencia que está dando el salto al desarrollo de software.
+            Combino la precisión del lenguaje con la lógica del código para crear soluciones claras y bien documentadas.
+          </p>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="cv/GermanAGonzalez-CV-ES.pdf" class="btn btn-secondary" download="CV-German-Andres-Gonzalez-ES.pdf">Descargar CV</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <!-- Placeholder para foto de perfil con marco desplazado naranja de fondo -->
+            <img src="img/foto-perfil.jpg" alt="Foto de perfil de Germán Andrés González" class="hero-img" width="320" height="320">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. INFORMACIÓN GENERAL (SOBRE MÍ) (#sobre-mi) - Fondo Crema
+         ====================================================================== -->
+    <section id="sobre-mi" class="section-padding theme-light">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Sobre mí</span>
+          <h2 class="section-title">Perfil y Trayectoria</h2>
+        </header>
+
+        <div class="about-text-group">
+          <p class="about-paragraph">
+            Soy traductor profesional inglés–español con más de 20 años de experiencia y desarrollador en formación. Durante todo este tiempo trabajé con clientes de distintos países y culturas, traduciendo manuales técnicos, procedimientos de seguridad y documentación industrial para empresas de los sectores automotriz y de maquinaria agrícola. Ese trabajo me enseñó a prestar atención al detalle, a comunicarme con claridad y a adaptarme a equipos y contextos muy diversos.
+          </p>
+          <p class="about-paragraph">
+            Hoy me formo en la UTN y desarrollo proyectos con Python, C#, C++ y bases de datos, además de trabajar con microcontroladores. Si bien mi recorrido como programador recién comienza, mi experiencia como traductor es un plus: estoy acostumbrado a cumplir plazos exigentes, entiendo documentación técnica en dos idiomas y sé escribir documentación clara para que otras personas puedan entender y mantener mi trabajo.
+          </p>
+          <p class="about-paragraph">
+            Me motiva aprender de forma continua y sumarme a equipos donde pueda aportar una mirada distinta, cuidadosa y orientada a la comunicación.
+          </p>
+        </div>
+
+        <!-- Tarjetas de datos rápidos -->
+        <div class="quick-facts-grid">
+          <article class="fact-card">
+            <span class="fact-label">Ubicación</span>
+            <p class="fact-value">Junín, Buenos Aires, Argentina</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Idiomas</span>
+            <p class="fact-value">Inglés (C1) y Español (nativo)</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Educación</span>
+            <p class="fact-value">Estudiante de la Tecnicatura Universitaria en Programación, UTN (Universidad Tecnológica Nacional), desde 2025</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Educación</span>
+            <p class="fact-value">Diplomado en Programación Python, UTN (Universidad Tecnológica Nacional), desde 2025</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Experiencia actual</span>
+            <p class="fact-value">Traductor técnico freelance inglés–español</p>
+          </article>
+        </div>
+
+        <!-- Timeline cronológico inverso -->
+        <h3 class="timeline-title">Experiencia laboral y formación</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4 class="timeline-year">2025 – hoy</h4>
+            <p class="timeline-content">
+              <strong>Formación en programación.</strong> Tecnicatura Universitaria en Programación y Diplomado en Programación Python en la UTN. Proyectos académicos en C#, C++ y Python.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-year">2003 – hoy</h4>
+            <p class="timeline-content">
+              <strong>Traductor freelance inglés–español.</strong> Traducción de manuales técnicos, procedimientos de seguridad y documentación industrial para clientes del sector automotriz y de maquinaria agrícola, de distintos países. Entregas de calidad con plazos ajustados. Incluye materiales académicos y técnicos relacionados con software (por ejemplo, J2EE).
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-year">2004 – 2008</h4>
+            <p class="timeline-content">
+              <strong>RZ Translations, traductor in-house (tiempo completo).</strong> Gestión de proyectos de traducción variados, gestión terminológica y comunicación con clientes.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-year">2004</h4>
+            <p class="timeline-content">
+              <strong>EstudioDiez.org, traductor y agente de marketing (La Plata).</strong> Traducciones de corto plazo y colaboración con el equipo de marketing en acciones de difusión.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. CONOCIMIENTOS (#conocimientos) - Fondo Oscuro
+         ====================================================================== -->
+    <section id="conocimientos" class="section-padding theme-dark">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Habilidades y Tecnologías</span>
+          <h2 class="section-title">Conocimientos</h2>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Categoría 1 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Lenguajes</h3>
+            <div class="chips-container">
+              <span class="chip">C#</span>
+              <span class="chip">C++</span>
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+            </div>
+          </article>
+
+          <!-- Categoría 2 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Frameworks y librerías</h3>
+            <div class="chips-container">
+              <span class="chip">.NET</span>
+              <span class="chip">Windows Forms (WinForms)</span>
+              <span class="chip">SFML</span>
+              <span class="chip">Tkinter</span>
+            </div>
+          </article>
+
+          <!-- Categoría 3 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Bases de datos</h3>
+            <div class="chips-container">
+              <span class="chip">SQL Server</span>
+              <span class="chip">SQLite</span>
+            </div>
+          </article>
+
+          <!-- Categoría 4 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Microcontroladores</h3>
+            <div class="chips-container">
+              <span class="chip">Arduino</span>
+              <span class="chip">ESP32</span>
+              <span class="chip">C++</span>
+              <span class="chip">MicroPython</span>
+            </div>
+          </article>
+
+          <!-- Categoría 5 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Herramientas y documentación</h3>
+            <div class="chips-container">
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">Visual Studio</span>
+              <span class="chip">Thonny</span>
+              <span class="chip">Sphinx (documentación en Python)</span>
+            </div>
+          </article>
+
+          <!-- Categoría 6 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Traducción y habilidades blandas</h3>
+            <div class="chips-container">
+              <span class="chip">Traducción técnica EN↔ES</span>
+              <span class="chip">Herramientas CAT</span>
+              <span class="chip">Gestión terminológica</span>
+              <span class="chip">Comunicación internacional</span>
+              <span class="chip">Plazos exigentes</span>
+              <span class="chip">Atención al detalle</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. PROYECTOS (#proyectos) - Fondo Crema
+         ====================================================================== -->
+    <section id="proyectos" class="section-padding theme-light">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Portafolio</span>
+          <h2 class="section-title">Proyectos Destacados</h2>
+        </header>
+
+        <!-- Proyectos destacados (los dos primeros, más grandes) -->
+        <div class="projects-featured-grid">
+          <!-- Proyecto 1 -->
+          <article class="project-card">
+            <div class="project-image-box">
+              <img src="img/proyecto-1.jpg" alt="Vista previa del Sistema de Gestión de Catálogo de Artículos" class="project-img" width="800" height="450" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sistema de Gestión de Catálogo de Artículos</h3>
+              <div class="project-meta-chips">
+                <span class="chip">Aplicación de escritorio (gestión)</span>
+                <span class="chip">C# y Windows Forms</span>
+                <span class="chip">Académico (trabajo práctico en equipo)</span>
+              </div>
+              <p class="project-description">
+                Aplicación robusta, dinámica y orientada a objetos diseñada para la gestión integral de catálogo de artículos.
+              </p>
+              <p class="project-role"><strong>Rol:</strong> Programador</p>
+              <a href="https://github.com/GermanAndresGonzalez/tp-winform-equipo-e" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="Ver Sistema de Gestión de Catálogo de Artículos en GitHub (se abre en pestaña nueva)">
+                Ver en GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6h-2v6H5V5z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 2 -->
+          <article class="project-card">
+            <div class="project-image-box">
+              <img src="img/proyecto-2.jpg" alt="Captura del videojuego RPG Las Profundidades de Eryndor" class="project-img" width="800" height="450" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Las Profundidades de Eryndor</h3>
+              <div class="project-meta-chips">
+                <span class="chip">Videojuego (RPG)</span>
+                <span class="chip">SFML 2.5.1 (C++)</span>
+                <span class="chip">Académico</span>
+              </div>
+              <p class="project-description">
+                Juego de rol (RPG) desarrollado íntegramente en C++ utilizando la biblioteca multimedia SFML 2.5.1.
+              </p>
+              <p class="project-role"><strong>Rol:</strong> Programador</p>
+              <a href="https://github.com/GermanAndresGonzalez/Eryndorv02" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="Ver Las Profundidades de Eryndor en GitHub (se abre en pestaña nueva)">
+                Ver en GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6h-2v6H5V5z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tercer proyecto bajo subtítulo "Otros proyectos" -->
+        <div class="projects-other-header">
+          <h3 class="projects-other-title">Otros proyectos</h3>
+        </div>
+        <div class="projects-other-grid">
+          <!-- Proyecto 3 -->
+          <article class="project-card">
+            <div class="project-image-box">
+              <img src="img/proyecto-3.jpg" alt="Captura de la aplicación de escritorio Clientes en Python y Tkinter" class="project-img" width="800" height="450">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Clientes</h3>
+              <div class="project-meta-chips">
+                <span class="chip">Aplicación de escritorio (administración)</span>
+                <span class="chip">Python y Tkinter</span>
+                <span class="chip">Académico (Diplomado en Programación Python)</span>
+              </div>
+              <p class="project-description">
+                Aplicación de escritorio para administración de clientes con persistencia de base de datos en Python.
+              </p>
+              <p class="project-role"><strong>Rol:</strong> Programador</p>
+              <a href="https://github.com/GermanAndresGonzalez/Diplo_Clientes_2" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="Ver Clientes en GitHub (se abre en pestaña nueva)">
+                Ver en GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6h-2v6H5V5z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. REDES (#redes) - Fondo Oscuro
+         ====================================================================== -->
+    <section id="redes" class="section-padding theme-dark">
+      <div class="container">
+        <header class="section-header text-center">
+          <span class="section-label">Canales de contacto</span>
+          <h2 class="section-title">Redes Profesionales</h2>
+        </header>
+
+        <div class="social-list">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/german-andres-gonzalez/" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="Perfil de LinkedIn de Germán Andrés González (se abre en pestaña nueva)">
+            <span class="social-icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 0 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+              </svg>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/GermanAndresGonzalez" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="Perfil de GitHub de Germán Andrés González (se abre en pestaña nueva)">
+            <span class="social-icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+            </span>
+            <span>GitHub</span>
+          </a>
+
+          <!-- Email -->
+          <a href="https://linkly.link/2ucmy" class="social-item" aria-label="Enviar correo electrónico a Germán Andrés González">
+            <span class="social-icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </span>
+            <span>Email</span>
+          </a>
+
+          <!-- WhatsApp (regla: el número NO debe figurar en el texto visible ni en alt/aria-label) -->
+          <a href="https://linkly.link/2uc2s" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="Contactar por WhatsApp (se abre en pestaña nueva)">
+            <span class="social-icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.32z"/>
+              </svg>
+            </span>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. FORMULARIO DE CONTACTO (#contacto) - Fondo Crema
+         ====================================================================== -->
+    <section id="contacto" class="section-padding theme-light">
+      <div class="container contact-container">
+        <header class="section-header text-center">
+          <span class="section-label">Envíame un mensaje</span>
+          <h2 class="section-title">Contacto</h2>
+        </header>
+
+        <div class="contact-card">
+          <!-- Formulario sin JS hacia Formspree con método POST -->
+          <form action="https://formspree.io/f/mwlpdadp" method="POST" class="contact-form">
+            
+            <div class="form-group">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="form-input" required placeholder="Tu nombre y apellido">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" id="email" name="_replyto" class="form-input" required placeholder="tunombre@ejemplo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" id="asunto" name="_subject" class="form-input" required placeholder="Motivo de tu consulta">
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" class="form-textarea" rows="5" required placeholder="Escribí aquí tu mensaje detallado..."></textarea>
+            </div>
+
+            <!-- Campo trampa (honeypot) anti-spam para Formspree:
+                 Oculto mediante CSS (no type="hidden") y con aria-hidden="true" para que los lectores de pantalla lo ignoren.
+                 Los bots completan este campo y Formspree descarta automáticamente el envío. -->
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="_gotcha">Dejar este campo vacío</label>
+              <input type="text" name="_gotcha" id="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button type="submit" class="contact-submit-btn">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <!-- Franja decorativa de 6px con los 5 colores exactos de la paleta -->
+    <div class="footer-palette-bar" aria-hidden="true"></div>
+
+    <div class="container footer-content">
+      <p class="footer-copy">© 2026 Germán Andrés González</p>
+      <p class="footer-credit">Hecho con HTML y CSS</p>
+    </div>
+  </footer>
+
+  <!-- Sincronización del selector de idioma con la sección actual (mejora progresiva mínima) -->
+  <script>
+    (function() {
+      function syncLangHash() {
+        var hash = window.location.hash || '#inicio';
+        var langLink = document.querySelector('.lang-link');
+        if (langLink) {
+          var base = langLink.getAttribute('href').split('#')[0];
+          langLink.setAttribute('href', base + hash);
+        }
+      }
+      window.addEventListener('hashchange', syncLangHash);
+      window.addEventListener('DOMContentLoaded', syncLangHash);
+      var navLinks = document.querySelectorAll('.nav-link');
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener('click', function() {
+          setTimeout(syncLangHash, 50);
+        });
+      }
+    })();
+  </script>
+  <script>
+  (function() {
+    var toggle = document.getElementById('menu-toggle');
+    var links = document.querySelectorAll('.site-nav a');
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function() { toggle.checked = false; });
+    }
+  })();
+</script>
+
+</body>
+</html>

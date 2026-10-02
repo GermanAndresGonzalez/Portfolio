@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Germán Andrés González | C# .NET & Python Developer</title>
+  <meta name="description" content="Professional portfolio of Germán Andrés González. C# & .NET Backend Developer, Python & microcontroller programmer, with over 20 years of experience as a technical translator.">
+
+  <!-- Cross hreflang links for bilingual support (SEO and accessibility) -->
+  <link rel="alternate" hreflang="es" href="../index.html">
+  <link rel="alternate" hreflang="en" href="index.html">
+
+  <!-- Google Fonts: Space Grotesk (700) and Inter (400, 600) in a single request -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Shared stylesheet with relative path -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. FIXED NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#inicio" class="brand-logo" aria-label="Go to top">Germán Andrés González</a>
+
+      <!-- CSS-only mobile hamburger menu (checkbox + label trick) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">
+      <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </label>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Home</a></li>
+          <li><a href="#sobre-mi" class="nav-link">About Me</a></li>
+          <li><a href="#conocimientos" class="nav-link">Skills</a></li>
+          <li><a href="#proyectos" class="nav-link">Projects</a></li>
+          <li><a href="#redes" class="nav-link">Connect</a></li>
+          <li><a href="#contacto" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Language switcher: EN active, ES as link to matching anchor -->
+        <div class="lang-selector" aria-label="Language selector">
+          <a href="../index.html#inicio" class="lang-item lang-link" lang="es" hreflang="es" aria-label="Switch to Spanish">
+            <svg class="flag-icon" viewBox="0 0 768 512" aria-hidden="true" focusable="false">
+              <rect width="768" height="512" fill="#74ACDF"/>
+              <rect y="170.66" width="768" height="170.66" fill="#FFFFFF"/>
+              <circle cx="384" cy="256" r="42" fill="#F6B40E"/>
+            </svg>
+            <span>ES</span>
+          </a>
+          <span class="lang-separator" aria-hidden="true">|</span>
+          <span class="lang-item active" aria-current="true">
+            <svg class="flag-icon" viewBox="0 0 768 512" aria-hidden="true" focusable="false">
+              <rect width="768" height="512" fill="#B22234"/>
+              <path d="M0,39.38h768v39.38H0zm0,78.77h768v39.38H0zm0,78.77h768v39.38H0zm0,78.77h768v39.38H0zm0,78.77h768v39.38H0zm0,78.77h768v39.38H0z" fill="#FFFFFF"/>
+              <rect width="307.2" height="275.69" fill="#3C3B6E"/>
+              <circle cx="153.6" cy="137.8" r="45" fill="#FFFFFF"/>
+            </svg>
+            <span>EN</span>
+          </span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         2. HERO SECTION (#inicio) - Dark Background
+         ====================================================================== -->
+    <section id="inicio" class="hero-section theme-dark">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="hero-name">Germán Andrés González</h1>
+          <p class="hero-title">C# & Backend .NET Developer · Python & Microcontroller Programmer</p>
+          <p class="hero-phrase">
+            I am a technical translator with over 20 years of experience transitioning into software development.
+            I blend linguistic precision with code logic to build clean, reliable, and thoroughly documented solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn btn-primary">View Projects</a>
+            <a href="../cv/GermanAGonzalez-CV.pdf" class="btn btn-secondary" download="CV-German-Andres-Gonzalez-EN.pdf">Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <!-- Profile picture placeholder with shifted solid orange backing block -->
+            <img src="../img/foto-perfil.jpg" alt="Profile photo of Germán Andrés González" class="hero-img" width="320" height="320">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. ABOUT ME (#sobre-mi) - Cream Background
+         ====================================================================== -->
+    <section id="sobre-mi" class="section-padding theme-light">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">Background & Profile</h2>
+        </header>
+
+        <div class="about-text-group">
+          <p class="about-paragraph">
+            I am an English–Spanish professional translator with more than 20 years of experience and a software developer in training. Throughout my career, I have collaborated with clients across diverse countries and cultures, translating technical manuals, safety protocols, and industrial documentation for agricultural machinery and automotive enterprises. This journey has honed my eye for detail, clear communication, and adaptability to multidisciplinary teams.
+          </p>
+          <p class="about-paragraph">
+            Currently, I am studying at UTN while building projects in Python, C#, C++, and databases, alongside microcontroller programming. While my developer journey is just getting started, my translation background is a strong asset: I am accustomed to demanding deadlines, adept at navigating bilingual technical documentation, and skilled at authoring clear documentation that ensures code is maintainable.
+          </p>
+          <p class="about-paragraph">
+            I am driven by continuous learning and eager to contribute to teams where I can bring a meticulous, thoughtful, and communication-driven perspective.
+          </p>
+        </div>
+
+        <!-- Quick Facts Cards -->
+        <div class="quick-facts-grid">
+          <article class="fact-card">
+            <span class="fact-label">Location</span>
+            <p class="fact-value">Junín, Buenos Aires, Argentina</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Languages</span>
+            <p class="fact-value">English (C1) and Spanish (Native)</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Education</span>
+            <p class="fact-value">Student, University Technician in Programming, UTN (National Technological University), since 2025</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Education</span>
+            <p class="fact-value">Diploma in Python Programming, UTN (National Technological University), since 2025</p>
+          </article>
+          <article class="fact-card">
+            <span class="fact-label">Current Experience</span>
+            <p class="fact-value">Freelance Technical Translator (English–Spanish)</p>
+          </article>
+        </div>
+
+        <!-- Reverse Chronological Timeline -->
+        <h3 class="timeline-title">Work Experience & Education</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h4 class="timeline-year">2025 – Present</h4>
+            <p class="timeline-content">
+              <strong>Programming Studies.</strong> University Technician in Programming and Diploma in Python Programming at UTN. Academic software projects in C#, C++, and Python.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-year">2003 – Present</h4>
+            <p class="timeline-content">
+              <strong>Freelance Technical Translator (English–Spanish).</strong> Translation of technical manuals, safety procedures, and industrial documentation for clients in the automotive and agricultural machinery sectors worldwide. High-quality deliverables on tight deadlines. Included academic and software-related materials (e.g., J2EE).
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-year">2004 – 2008</h4>
+            <p class="timeline-content">
+              <strong>RZ Translations, In-house Translator (Full-time).</strong> Management of diverse translation projects, terminology management, and direct client communications.
+            </p>
+          </div>
+          <div class="timeline-item">
+            <h4 class="timeline-year">2004</h4>
+            <p class="timeline-content">
+              <strong>EstudioDiez.org, Translator & Marketing Specialist (La Plata).</strong> Short-term technical translations and collaboration with the marketing team on promotional and outreach campaigns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SKILLS (#conocimientos) - Dark Background
+         ====================================================================== -->
+    <section id="conocimientos" class="section-padding theme-dark">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Technical Skills</span>
+          <h2 class="section-title">Knowledge & Tools</h2>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Category 1 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Languages</h3>
+            <div class="chips-container">
+              <span class="chip">C#</span>
+              <span class="chip">C++</span>
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+            </div>
+          </article>
+
+          <!-- Category 2 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Frameworks & Libraries</h3>
+            <div class="chips-container">
+              <span class="chip">.NET</span>
+              <span class="chip">Windows Forms (WinForms)</span>
+              <span class="chip">SFML</span>
+              <span class="chip">Tkinter</span>
+            </div>
+          </article>
+
+          <!-- Category 3 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Databases</h3>
+            <div class="chips-container">
+              <span class="chip">SQL Server</span>
+              <span class="chip">SQLite</span>
+            </div>
+          </article>
+
+          <!-- Category 4 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Microcontrollers</h3>
+            <div class="chips-container">
+              <span class="chip">Arduino</span>
+              <span class="chip">ESP32</span>
+              <span class="chip">C++</span>
+              <span class="chip">MicroPython</span>
+            </div>
+          </article>
+
+          <!-- Category 5 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Tools & Documentation</h3>
+            <div class="chips-container">
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">Visual Studio</span>
+              <span class="chip">Thonny</span>
+              <span class="chip">Sphinx (Python documentation)</span>
+            </div>
+          </article>
+
+          <!-- Category 6 -->
+          <article class="skill-card">
+            <h3 class="skill-category-title">Translation & Soft Skills</h3>
+            <div class="chips-container">
+              <span class="chip">Technical Translation EN↔ES</span>
+              <span class="chip">CAT Tools</span>
+              <span class="chip">Terminology Management</span>
+              <span class="chip">International Communication</span>
+              <span class="chip">Demanding Deadlines</span>
+              <span class="chip">Attention to Detail</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. PROJECTS (#proyectos) - Cream Background
+         ====================================================================== -->
+    <section id="proyectos" class="section-padding theme-light">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+        </header>
+
+        <!-- Featured Projects Grid (First two, prominent) -->
+        <div class="projects-featured-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image-box">
+              <img src="../img/proyecto-1.jpg" alt="Preview of Article Catalog Management System" class="project-img" width="800" height="450" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Article Catalog Management System</h3>
+              <div class="project-meta-chips">
+                <span class="chip">Desktop Application (Management)</span>
+                <span class="chip">C# & Windows Forms</span>
+                <span class="chip">Academic (Team Project)</span>
+              </div>
+              <p class="project-description">
+                Robust, dynamic, and object-oriented desktop application designed for comprehensive article and catalog management.
+              </p>
+              <p class="project-role"><strong>Role:</strong> Programmer</p>
+              <a href="https://github.com/GermanAndresGonzalez/tp-winform-equipo-e" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="View Article Catalog Management System on GitHub (opens in a new tab)">
+                View on GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6h-2v6H5V5z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image-box">
+              <img src="../img/proyecto-2.jpg" alt="Screenshot of The Depths of Eryndor RPG game" class="project-img" width="800" height="450" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">The Depths of Eryndor</h3>
+              <div class="project-meta-chips">
+                <span class="chip">Video Game (RPG)</span>
+                <span class="chip">SFML 2.5.1 (C++)</span>
+                <span class="chip">Academic</span>
+              </div>
+              <p class="project-description">
+                Role-playing game (RPG) developed entirely in C++ utilizing the SFML 2.5.1 multimedia library.
+              </p>
+              <p class="project-role"><strong>Role:</strong> Programmer</p>
+              <a href="https://github.com/GermanAndresGonzalez/Eryndorv02" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="View The Depths of Eryndor on GitHub (opens in a new tab)">
+                View on GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6h-2v6H5V5z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Third Project under "Other Projects" -->
+        <div class="projects-other-header">
+          <h3 class="projects-other-title">Other Projects</h3>
+        </div>
+        <div class="projects-other-grid">
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image-box">
+              <img src="../img/proyecto-3.jpg" alt="Screenshot of Clients desktop administration application in Python" class="project-img" width="800" height="450" loading="lazy" decoding="async">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Clients</h3>
+              <div class="project-meta-chips">
+                <span class="chip">Desktop Application (Administration)</span>
+                <span class="chip">Python & Tkinter</span>
+                <span class="chip">Academic (Diploma in Python Programming)</span>
+              </div>
+              <p class="project-description">
+                Desktop application for customer administration integrated with database persistence in Python.
+              </p>
+              <p class="project-role"><strong>Role:</strong> Programmer</p>
+              <a href="https://github.com/GermanAndresGonzalez/Diplo_Clientes_2" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="View Clients on GitHub (opens in a new tab)">
+                View on GitHub
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3zM5 5h6V3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-6h-2v6H5V5z"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. SOCIAL CONNECT (#redes) - Dark Background
+         ====================================================================== -->
+    <section id="redes" class="section-padding theme-dark">
+      <div class="container">
+        <header class="section-header text-center">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">Professional Networks</h2>
+        </header>
+
+        <div class="social-list">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/german-andres-gonzalez/" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="LinkedIn profile of Germán Andrés González (opens in a new tab)">
+            <span class="social-icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 0 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+              </svg>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/GermanAndresGonzalez" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="GitHub profile of Germán Andrés González (opens in a new tab)">
+            <span class="social-icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+              </svg>
+            </span>
+            <span>GitHub</span>
+          </a>
+
+          <!-- Email -->
+          <a href="https://linkly.link/2ucmy" class="social-item" aria-label="Send email to Germán Andrés González">
+            <span class="social-icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </span>
+            <span>Email</span>
+          </a>
+
+          <!-- WhatsApp (Rule: phone number must NOT be visible in text or alt/aria-label) -->
+          <a href="https://linkly.link/2uc2s" target="_blank" rel="noopener noreferrer" class="social-item" aria-label="Chat on WhatsApp (opens in a new tab)">
+            <span class="social-icon-circle">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.32z"/>
+              </svg>
+            </span>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. CONTACT FORM (#contacto) - Cream Background
+         ====================================================================== -->
+    <section id="contacto" class="section-padding theme-light">
+      <div class="container contact-container">
+        <header class="section-header text-center">
+          <span class="section-label">Send a Message</span>
+          <h2 class="section-title">Contact</h2>
+        </header>
+
+        <div class="contact-card">
+          <!-- Formspree form without JS using POST method -->
+          <form action="https://formspree.io/f/mwlpdadp" method="POST" class="contact-form">
+            
+            <div class="form-group">
+              <label for="nombre" class="form-label">Full Name</label>
+              <input type="text" id="nombre" name="name" class="form-input" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="_replyto" class="form-input" required placeholder="yourname@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="asunto" class="form-label">Subject</label>
+              <input type="text" id="asunto" name="_subject" class="form-input" required placeholder="Inquiry subject">
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje" class="form-label">Message</label>
+              <textarea id="mensaje" name="message" class="form-textarea" rows="5" required placeholder="Type your message here..."></textarea>
+            </div>
+
+            <!-- Anti-spam Honeypot field for Formspree:
+                 Hidden with CSS (not type="hidden") and marked aria-hidden="true" so screen readers ignore it.
+                 Spam bots fill this field in and Formspree automatically drops the submission. -->
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="_gotcha">Leave this field blank</label>
+              <input type="text" name="_gotcha" id="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button type="submit" class="contact-submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <!-- 6px decorative bar featuring the 5 palette colors -->
+    <div class="footer-palette-bar" aria-hidden="true"></div>
+
+    <div class="container footer-content">
+      <p class="footer-copy">© 2026 Germán Andrés González</p>
+      <p class="footer-credit">Built with HTML and CSS</p>
+    </div>
+  </footer>
+
+  <!-- Synchronization of the language switch anchor with current visible section -->
+  <script>
+    (function() {
+      function syncLangHash() {
+        var hash = window.location.hash || '#inicio';
+        var langLink = document.querySelector('.lang-link');
+        if (langLink) {
+          var base = langLink.getAttribute('href').split('#')[0];
+          langLink.setAttribute('href', base + hash);
+        }
+      }
+      window.addEventListener('hashchange', syncLangHash);
+      window.addEventListener('DOMContentLoaded', syncLangHash);
+      var navLinks = document.querySelectorAll('.nav-link');
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].addEventListener('click', function() {
+          setTimeout(syncLangHash, 50);
+        });
+      }
+    })();
+  </script>
+
+  <!-- Cierra el menú móvil al tocar un enlace -->
+  <script>
+    (function() {
+      var toggle = document.getElementById('menu-toggle');
+      var links = document.querySelectorAll('.site-nav a');
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener('click', function() { toggle.checked = false; });
+      }
+    })();
+  </script>
+</body>
+</html>
